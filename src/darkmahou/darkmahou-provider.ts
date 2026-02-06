@@ -27,7 +27,7 @@ type SimilarityScore = number & { readonly __similarity: '0-1' };
 
 // Configuration with stronger typing
 const PROVIDER_CONFIG = {
-    API_BASE_URL: "https://darkmahou.org" as const,
+    API_BASE_URL: "https://darkmahou.io" as const,
     USER_AGENT: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" as const,
     MAX_EPISODE_NUMBER: 9999 as const,
     MIN_EPISODE_NUMBER: 1 as const,
@@ -51,7 +51,7 @@ const REGEX_PATTERNS = {
     },
     SEASON_ORDINAL: /\b(\d+)(?:st|nd|rd|th)\s+season\b/gi,
     SEASON_NUMBER: /\bseason\s+(\d+)\b/gi,
-    ANIME_PAGE_LINK: /<a[^>]+href="(https:\/\/darkmahou\.org\/[^\/]+\/)"[^>]*title="([^"]*)"[^>]*>/gi
+    ANIME_PAGE_LINK: /<a[^>]+href="(https:\/\/darkmahou\.io\/[^\/]+\/)"[^>]*title="([^"]*)"[^>]*>/gi
 } as const;
 
 const PORTUGUESE_TRANSLATIONS = {
